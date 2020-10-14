@@ -36,7 +36,7 @@ namespace Debouncer
             Hide();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Init()
         {
             FormBorderStyle = FormBorderStyle.FixedSingle;
             listViewEx1.Columns.Add("Active", 50, HorizontalAlignment.Left);
@@ -81,10 +81,7 @@ namespace Debouncer
                                         textBox1,
                                         label5
                                     };
-        }
 
-        public void InitNotifyIcon()
-        {
             notifyIcon1.ContextMenuStrip = new ContextMenuStrip
             {
                 ImageScalingSize = new Size(15, 15)

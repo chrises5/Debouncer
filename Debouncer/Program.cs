@@ -50,7 +50,7 @@ namespace Debouncer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var form = ConfigForm.CreateInstance(config);
-            form.InitNotifyIcon();
+            form.Init();
             Application.Run();
 
             MouseHook.Instance.RemoveHook();

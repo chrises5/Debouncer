@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debouncer", "Debouncer\Debouncer.csproj", "{38892921-7094-4C2D-9BE0-6253BF2B53D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewEx", "ListViewEx\ListViewEx.csproj", "{35A5C415-0906-4AC7-B0F6-FE3CCA884AD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38892921-7094-4C2D-9BE0-6253BF2B53D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38892921-7094-4C2D-9BE0-6253BF2B53D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38892921-7094-4C2D-9BE0-6253BF2B53D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38892921-7094-4C2D-9BE0-6253BF2B53D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A5C415-0906-4AC7-B0F6-FE3CCA884AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A5C415-0906-4AC7-B0F6-FE3CCA884AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A5C415-0906-4AC7-B0F6-FE3CCA884AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A5C415-0906-4AC7-B0F6-FE3CCA884AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E536CAD-C4CE-4614-A312-37A4F1579537}
+	EndGlobalSection
+EndGlobal

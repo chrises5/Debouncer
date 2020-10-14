@@ -17,21 +17,22 @@ namespace Debouncer
             }
             catch (Exception)
             {
-                config = new Config();
+                config = new Config
+                {
+                    { (int)MouseInput.WindowsCode.L_DOWN, new MouseInputConfig(110) },
+                    { (int)MouseInput.WindowsCode.L_UP, new MouseInputConfig(110) },
 
-                config.Add((int)MouseInput.WindowsCode.L_DOWN, new MouseInputConfig(110));
-                config.Add((int)MouseInput.WindowsCode.L_UP, new MouseInputConfig(110));
+                    { (int)MouseInput.WindowsCode.R_DOWN, new MouseInputConfig(110) },
+                    { (int)MouseInput.WindowsCode.R_UP, new MouseInputConfig(110) },
 
-                config.Add((int)MouseInput.WindowsCode.R_DOWN, new MouseInputConfig(110));
-                config.Add((int)MouseInput.WindowsCode.R_UP, new MouseInputConfig(110));
+                    { (int)MouseInput.WindowsCode.M_DOWN, new MouseInputConfig(110) },
+                    { (int)MouseInput.WindowsCode.M_UP, new MouseInputConfig(110) },
 
-                config.Add((int)MouseInput.WindowsCode.M_DOWN, new MouseInputConfig(110));
-                config.Add((int)MouseInput.WindowsCode.M_UP, new MouseInputConfig(110));
+                    { (int)MouseInput.WindowsCode.X_DOWN, new MouseInputConfig(110) },
+                    { (int)MouseInput.WindowsCode.X_UP, new MouseInputConfig(110) },
 
-                config.Add((int)MouseInput.WindowsCode.X_DOWN, new MouseInputConfig(110));
-                config.Add((int)MouseInput.WindowsCode.X_UP, new MouseInputConfig(110));
-
-                config.Add((int)MouseInput.WindowsCode.WHEEL, new MouseInputConfig(110));
+                    { (int)MouseInput.WindowsCode.WHEEL, new MouseInputConfig(110) }
+                };
 
                 try
                 {

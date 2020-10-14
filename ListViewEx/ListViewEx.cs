@@ -329,19 +329,16 @@ namespace ListViewEx
 
 		protected void OnSubItemBeginEditing(SubItemEventArgs e)
 		{
-			if (SubItemBeginEditing != null)
-				SubItemBeginEditing(this, e);
-		}
+            SubItemBeginEditing?.Invoke(this, e);
+        }
 		protected void OnSubItemEndEditing(SubItemEndEditingEventArgs e)
 		{
-			if (SubItemEndEditing != null)
-				SubItemEndEditing(this, e);
-		}
+            SubItemEndEditing?.Invoke(this, e);
+        }
 		protected void OnSubItemClicked(SubItemEventArgs e)
 		{
-			if (SubItemClicked != null)
-				SubItemClicked(this, e);
-		}
+            SubItemClicked?.Invoke(this, e);
+        }
 
 
 		/// <summary>

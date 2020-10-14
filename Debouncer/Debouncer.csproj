@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>empty-filter-512.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\empty-filter-512.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -119,14 +119,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="settings.ico" />
+    <None Include="Resources\settings.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="exit.ico" />
+    <None Include="Resources\exit.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
@@ -140,8 +138,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="empty-filter-512.ico" />
-    <Content Include="empty-filter-512_g.ico" />
+    <Content Include="Resources\empty-filter-512.ico" />
+    <Content Include="Resources\empty-filter-512_g.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

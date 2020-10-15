@@ -120,7 +120,11 @@ namespace Debouncer
 
         private void ListViewEx1_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            config[ItemtoCode[e.Index]].Debounce = !config[ItemtoCode[e.Index]].Debounce;
+            if (e.CurrentValue == CheckState.Unchecked)
+                config[ItemtoCode[e.Index]].Debounce = true;
+            else if (e.CurrentValue == CheckState.Checked)
+                config[ItemtoCode[e.Index]].Debounce = false;
+
             config.Save();
         }
 
@@ -133,9 +137,7 @@ namespace Debouncer
         private void ListViewEx1_SubItemClicked(object sender, ListViewEx.SubItemEventArgs e)
         {
             if (e.SubItem == 3)
-            {
                 listViewEx1.StartEditing(Editors[e.SubItem], e.Item, e.SubItem);
-            }
         }
 
         private void ListView1_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e)

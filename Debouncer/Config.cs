@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 
 namespace Debouncer
 {
@@ -19,16 +21,19 @@ namespace Debouncer
 
     public class Config : Dictionary<int, MouseInputConfig>
     {
-        private static readonly string configPath = "config.json";
+        private static string ConfigFolder => Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Debouncer");
+        private static string ConfigFile => Path.Combine(ConfigFolder, "config.json");
 
         public void Save()
         {
-            this.WriteObjectToFile(configPath);
+            if(!Directory.Exists(ConfigFolder))
+                Directory.CreateDirectory(ConfigFolder);
+            this.WriteObjectToFile(ConfigFile);
         }
 
         public static Config Load()
         {
-            return JsonFile.LoadObjectFromFile<Config>(configPath);
+            return JsonFile.LoadObjectFromFile<Config>(ConfigFile);
         }
     }
 }

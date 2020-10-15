@@ -30,33 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigForm));
-            this.listViewEx1 = new ListViewEx.ListViewEx();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.listViewEx1 = new ListViewEx.ListViewEx();
             this.SuspendLayout();
-            // 
-            // listViewEx1
-            // 
-            this.listViewEx1.AllowColumnReorder = true;
-            this.listViewEx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.listViewEx1.CheckBoxes = true;
-            this.listViewEx1.DoubleClickActivation = false;
-            this.listViewEx1.ForeColor = System.Drawing.SystemColors.Control;
-            this.listViewEx1.FullRowSelect = true;
-            this.listViewEx1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listViewEx1.HideSelection = false;
-            this.listViewEx1.Location = new System.Drawing.Point(12, 12);
-            this.listViewEx1.MultiSelect = false;
-            this.listViewEx1.Name = "listViewEx1";
-            this.listViewEx1.OwnerDraw = true;
-            this.listViewEx1.Size = new System.Drawing.Size(374, 187);
-            this.listViewEx1.TabIndex = 1;
-            this.listViewEx1.UseCompatibleStateImageBehavior = false;
-            this.listViewEx1.View = System.Windows.Forms.View.Details;
             // 
             // checkBox1
             // 
@@ -111,6 +92,25 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon1_MouseDoubleClick);
             // 
+            // listViewEx1
+            // 
+            this.listViewEx1.AllowColumnReorder = true;
+            this.listViewEx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.listViewEx1.CheckBoxes = true;
+            this.listViewEx1.DoubleClickActivation = false;
+            this.listViewEx1.ForeColor = System.Drawing.SystemColors.Control;
+            this.listViewEx1.FullRowSelect = true;
+            this.listViewEx1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listViewEx1.HideSelection = false;
+            this.listViewEx1.Location = new System.Drawing.Point(12, 12);
+            this.listViewEx1.MultiSelect = false;
+            this.listViewEx1.Name = "listViewEx1";
+            this.listViewEx1.OwnerDraw = true;
+            this.listViewEx1.Size = new System.Drawing.Size(374, 187);
+            this.listViewEx1.TabIndex = 1;
+            this.listViewEx1.UseCompatibleStateImageBehavior = false;
+            this.listViewEx1.View = System.Windows.Forms.View.Details;
+            // 
             // ConfigForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,7 +127,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConfigForm";
-            this.ShowIcon = false;
             this.Text = "Debouncer Settings";
             this.ResumeLayout(false);
             this.PerformLayout();
